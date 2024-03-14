@@ -1,0 +1,85 @@
+<section class="friend-list">
+    <div class="friend-list-content" >
+        <?php
+        $friend = get_friend($name);
+
+        
+
+        ?>
+        <?php
+        foreach($friend as $friend):
+         ?>
+         <?php 
+                                 $postfriend = $friend['friendlogin'];
+                                 //var_dump($postfriend);
+        ?>
+        
+    
+        <div class="friend-list-friends-item">
+            <div class="friend-list-friends-logo">
+                <a href="cab.php?login=<?=$friend['friendlogin']?>">
+                <img src="<?=$friend['friendimage'];?>" style="width:100px; height:100px; border-radius: 50%;">
+                </a>
+            </div>
+            
+        </div>
+      
+        <?php
+        endforeach;
+        ?>
+    </div>
+</section>
+    <section class="main-index">
+        <div class="main-index-container">
+            <div class="main-index-wrapper">
+                <div class="main-index-content">
+                    
+                
+                    <div class="main-index-news">
+                        <?php
+                        $poster = get_post();
+                        $post = get_posts($name);
+                        
+                        //var_dump($friend);
+                        ?>
+        <?php
+            foreach($poster as $item):
+        ?>
+            <div class="post">
+                <div class="post-image-index"><img src="<?=$item['image'];?>" style="height:100%; width:100%;"></div>
+                <div ><img src="<?=$item['userimage'];?>" class="userlogo"></div>
+                <div class="post-title"><p style="margin-top:30px; margin-left:50px; font-family: LutskCity; font-size: 15px;"><?=$item['userlogin'];?></p></div>
+                <div class="post-text" style="margin-left:160px; margin-top:-20px; font-size:20px; font-family: LutskCity ;"><?=$item['text'];?></div>
+            </div>
+            
+                        
+
+        <?php
+            endforeach;
+        ?>
+        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="user-menu-panel">
+    <div class="user-menu-panel-container">
+        <div class="user-menu-panel-wrapper">
+            <div class="user-menu-panel-content">
+                <div class="user-menu-panel-list">
+                    <ul>
+                        <li><a href="/cab.php?login=<?=$_COOKIE['userlog']?>">Профіль</a></li>
+                        <li>Друзі</li>
+                        <li>Чати</li>
+                        <li>Нові користувачі</li>
+                        <li>Налаштування</li>
+                        <li><a href="exit.php">Вихід</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

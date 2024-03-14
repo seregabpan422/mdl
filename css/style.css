@@ -1,0 +1,1192 @@
+@font-face {
+    font-family: "LutskCity";    
+    src: url("../fonts/LutskC.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+    ;
+    } 
+body {
+    background: linear-gradient(to right, rgb(125, 89, 89), white);
+    background-size: cover;
+    cursor: url(../cursor2.cur), auto;
+    
+    overflow-x: hidden;
+}
+.loginbg {
+    background-image: url(../bglogin.jpg);
+    background-repeat: no-repeat;
+    background-size: 150%;
+    overflow-y: hidden;
+    
+}
+
+.cabbg {
+    background-repeat: no-repeat;
+    background-size: 150%;
+    background-image: url(../bgcab.jpg);
+    background-clip: border-box;
+   cursor:url(../cursor2.cur), auto;
+    
+}
+
+input{
+    cursor:url(../cursor2.cur), text;
+    transition:3s;
+}
+
+a {
+    font-size: 20px;
+    color: royalblue;
+    overflow: hidden;
+    background: linear-gradient(to left, midnightblue, midnightblue 50%, royalblue 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 275ms ease;
+}
+
+a:hover {
+    background-position: 0 100%;
+}
+
+.header{
+    height: 100px;
+    width:1900px;
+    z-index:5px;
+    position:absolute;
+
+    margin-left:-10px;
+}
+.header-logo {
+    position:absolute;
+    margin-top:-17px;
+    margin-left:20px
+}
+.header-content {
+    max-width: 1360px;
+    margin:auto;
+    display:flex;
+}
+
+.header-nav{
+    display:flex;
+    text-decoration: none;
+}
+
+.menu {
+    color: #054C73;
+    margin-top:20px;    
+    font-family: LutskCity;
+    box-shadow: 1px 1px 20px wheat,
+    3px 1px 14px black,
+    4px 2px 22px blue;
+    width:1360px;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.menu__list {
+    text-decoration: none;
+    margin-left:350px;
+    display:flex;
+}
+
+.menu__list-item {
+    width:200px;
+    transition:3s;
+    font-size:25px;
+    margin-left:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+.menu__list-item:hover {
+    
+    font-size:27px;
+    padding-top:5px;
+    padding-bottom:5px;
+
+}
+a {
+    text-decoration: none;
+    color: #054C73;
+}
+
+li {
+    list-style-type:none;
+    padding-left: 40px;
+    padding-right:40px;
+
+
+}
+
+
+
+.info_container{
+    max-width: 1600px;
+    margin:auto;
+    
+}
+
+.info_content {
+    border-radius:5px;
+    width:1360px;
+    box-shadow: 1px 2px 15px black,
+    2px 4px 16px wheat;
+    height:800px;
+    position:absolute;
+    margin-top:120px;
+    margin-left:130px;
+    background-color: rgba(247, 241, 244, 0.9);
+}
+
+.info-photo{
+    width:450px;
+    height:450px;
+    box-shadow: 2px 3px 42px ;
+    margin-left:40px;
+    margin-top:20px;
+    transition: 3s;
+}
+
+.info-photo:hover {
+    width:450px;
+    height:450px;
+    box-shadow: 1px 2px 11px blue;
+}
+
+.info-title {
+    font-family: LutskCity;
+    font-size:25px;
+    margin-left:100px;
+    margin-top:50px;
+    color: #054C73;
+}
+.info-subtitle {
+    font-family: LutskCity;
+    font-size:20px;
+    margin-left:60px;
+    margin-top:30px;
+    color: #054C73;
+}
+.info-text-title {
+    font-family: LutskCity;
+    font-size:20px;
+    
+    margin-left:600px;
+    margin-top:-560px;
+    color: #054C73;
+    position:absolute;  
+}
+.info-text {
+    font-family: LutskCity;
+    font-size:20px;
+    margin-left:600px;
+    margin-top:-460px;
+    color: #054C73;
+    position:absolute;  
+    
+    line-height: 40px;
+}
+
+.comment{
+    font-size: 10px;
+    position:absolute;
+    margin-top:-20px;
+}
+.info-pannel {
+    width:500px;
+    height:100px;
+    
+    margin-left: 660px;
+    margin-top:-60px;
+    display: flex;
+}
+.info-button {
+    width:100px;
+    padding-left:60px;
+    padding-right:60px;
+    padding-top:15px;
+    padding-bottom:15px;
+    text-align: center;
+    margin-left:20px;
+    height:20px;
+}
+#yes {
+    box-shadow:4px 5px 1px rgb(199, 199, 235), 7px 8px 1px rgb(248, 216, 156), 9px 9px 1px rgb(243, 118, 118);
+    transition:1s;
+    font-family: LutskCity;
+    border-radius: 10px;
+}
+#no {
+    box-shadow: 4px 5px 1px black, 7px 8px 1px grey, 9px 9px 1px purple;
+    transition:2s;
+    background-color: rgb(54, 37, 19);
+    color:white;
+    font-family: LutskCity;
+    border-radius: 10px;
+}
+
+#yes:hover {
+    box-shadow:2px 2px 6px blue, 6px 6px 6px wheat, 8px 8px 6px red;
+    background-color: rgb(54, 37, 19);
+    color:white;
+}
+#no:hover{
+    box-shadow: 2px 2px 6px black, 6px 6px 6px grey, 8px 8px 6px purple;
+    background-color: rgb(54, 37, 19, 0.0);
+    color:rgb(54, 37, 19)
+}
+.ideas {
+    position:fixed;
+}
+.idea-container {
+    margin:auto;
+    max-width: 1360px;
+}
+.idea-line {
+    transition: 3s;
+    border-top:0px;
+    width:400px;
+    height:100px;
+    position:absolute;
+    margin-left:700px;
+    margin-top:900px;
+    display:flex;
+    border-radius: 100px;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;   
+    
+}
+.idea-line:hover {
+
+    width:400px;
+    height:100px;
+    position:absolute;
+    margin-left:700px;
+    margin-top:860px;
+    display:flex;
+    border-radius: 100px;
+    border-bottom: none;
+    border-left:none;
+    border-right:none;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+.idea-object {
+    margin-left:20px;
+    align-items: center;
+    margin-right:10px;
+}
+.img:hover{
+    width:120px;
+    height:120px;
+    transition:3s;
+    margin-top:-20px;
+    margin-left:-10px;
+    
+}
+.img{
+    transition:3s;
+}
+
+
+.menu-panel {
+    width:1000px;
+    height:750px;
+    margin-left:1240px;
+    margin-top:160px;
+    position:absolute;
+    
+    
+}
+
+.menu-panel-content {
+    background-color: rgb(255, 255, 255, 0.9);
+    width:100%; 
+    display:flex;
+    
+    height: 800px;
+}
+.menu-panel-userinfo {
+    display:flex;
+}
+
+.menu-panel-list {
+    font-size: 25px;
+    line-height: 100px;
+    font-family: LutskCity;
+    margin-top:150px;
+    position:absolute;
+    display:flex;
+}
+
+.menu-panel-username{
+    font-size:20x;
+    font-family: LutskCity;
+    margin-top:90px;
+    margin-left:150px;
+    position:absolute;
+}
+.menu-panel-usernews{
+    font-size:10px;
+    font-family: LutskCity;
+    margin-top:120px;
+    margin-left:150px;
+    position:absolute;
+}
+.menu-panel-userlogo {
+    width:100px;
+    height:100px;
+    position:absolute;
+    box-shadow: 1px 1px 5px black;
+    border-radius: 50%;
+    margin-top:60px;
+    margin-left:30px;    
+}
+
+.main-index {
+    max-width: 1060px;
+    margin:auto;
+    
+}
+
+.main-index-news {
+    display:flex;
+    flex-flow: column;
+}
+
+.main-index-content{
+    width:900px;
+    height:800px;
+    
+    margin-top:150px;
+}
+
+
+
+.regform {
+
+    max-width: 1360px;
+    margin:auto;
+
+}
+
+.registration {
+
+    display:flex;
+    width:1200px;
+    margin-left:320px;
+    
+    margin-top:200px;
+}
+
+.reg-form {
+    width:500px;
+    text-align: center;
+    margin-left:-200px;
+    box-shadow: 5px 5px 15px black;
+    background-color: rgba(224, 193, 222, 0.4);
+    height:500px;
+    color:#054C73;
+    border-radius: 50px;
+}
+
+.login {
+    width:500px;
+    text-align: center;
+    margin-left:400px;
+    
+    color:#054C73;
+    position: absolute;
+}
+.login-form{
+    margin-left:200px;
+}
+.login-text{
+    font-size: 25px;
+    font-family: LutskCity;
+    padding-top:40px;
+}
+
+.reg-text{
+    font-size: 25px;
+    font-family: LutskCity;
+    padding-top:40px;
+    }
+
+.form-input {
+    border:0px;
+    background-color: rgb(255, 255, 255, 0.5);
+    font-size: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 1s;
+    height:50px;
+    color:grey;
+    width:400px;
+}
+.form-input:focus {
+    background-color:rgb(105, 65, 225, 0.7);
+    color:pink;
+    border:0px;
+    font-weight: 500;
+    font:bolder
+}
+.regbtn {
+    font-family: LutskCity;
+width:300px;
+padding-top:20px;
+padding-bottom:20px;
+margin-top:50px;
+border:1px solid royalblue;
+border-radius: 40px;
+background: linear-gradient(to left, rgb(255, 255, 255, 0)50%, royalblue 50%);
+
+
+background-size: 200% 100%;
+background-position: 100%;
+transition: background-position 3s ease;
+
+color:pink;
+}
+
+.regbtn:hover {
+      background-position: 0 100%;
+      transition: 1s;
+      color:pink
+}
+
+
+.user-container {
+    width:1360px;
+    height:fit-content;
+
+    margin-left:260px;
+    margin-top:-100px;
+    position:absolute;  
+    background-color: rgba(224, 193, 222, 0.7);
+    box-shadow: 1px 1px 15px;
+}
+
+.user-logo {
+    width:250px;
+    height:250px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px;
+    margin-left:50px;
+    margin-top:50px;
+    
+}
+
+
+
+.user-name {
+    font-family: LutskCity;
+    font-size: 25px;
+    text-shadow: 5px 5px 20px;
+    position:absolute;
+    margin-left:340px;
+    margin-top:-200px;
+    color:#054C73;
+}
+
+.user-surname {
+    font-family: LutskCity;
+    font-size: 25px;
+    text-shadow: 5px 5px 20px;
+    position:absolute;
+    margin-left:520px;
+    margin-top:-200px;
+    color:#054C73;
+}
+
+.user-status {
+    font-family: LutskCity;
+    font-size: 15px;
+    text-shadow: 5px 5px 20px;
+    position:absolute;
+    margin-left:340px;
+    margin-top:-150px;
+    color:#054C73;
+}
+
+.user-bio {
+    width:800px;
+    max-width: 800px;
+    height:200px;
+    font-family: LutskCity;
+    font-size: 15px;
+    height:100px;
+    position:absolute;
+    margin-left:340px;
+    margin-top:-100px;
+    color:#054C73;
+    
+}
+
+.user-posts {
+    border-top:1px solid black;
+    width:1340px;
+    max-width: 1340px;
+    max-height: 10000px;
+    height:450px;
+    margin-left:10px;
+    margin-top:50px;
+}
+
+.user-newpost {
+    font-size: 40px;
+    font-family: LutskCity;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px;
+    width:50px;
+    text-align: center;
+    position:fixed;
+    margin-top:380px;
+    margin-left:600px;
+    transition: 1s;
+}
+
+
+.user-newpost:hover {
+    transform:rotate(45deg);
+}
+
+.user-posts {
+    display:flex;
+    box-sizing: border-box;
+    max-width: 100%;
+    flex-flow:wrap;
+    float:none;
+    height:100%;
+    
+}
+.user {
+    position:absolute;
+    margin-top:30px;
+}
+.post{
+    
+    padding-bottom: 40px;
+
+    margin-left:-35px;
+    background-color: rgb(255, 255, 255, 1);
+    display:block;
+    height:700px;
+    box-shadow: 5px 5px 15px;
+}
+
+
+
+.main-index-news {
+    background-color: white;
+    width:660px;
+    padding-left: 20px;
+    overflow: hidden;
+    margin-left:px;
+    margin-top:-100px;
+}
+
+.post-image-index {
+    width:100%;
+    height:80%;
+    
+}
+
+.userlogo {
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    position:absolute;
+    margin-left:50px;
+    margin-top:20px;
+    box-shadow: 5px 5px 15px;
+}
+
+.post-title {
+    width:15%;
+    height:50px;
+    margin-left:12%;
+    margin-top:20px;
+    text-align: center;
+    text-shadow: 5px 5px 5px;
+}
+
+.post-cab-image {
+    margin-left:64px;
+    filter:blur(3px);
+    transition: 1s;
+    padding-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    width:360px;
+    height:400px;
+    margin-top:20px;
+    max-height: 400px;
+}
+
+.post-cab-image:hover {
+    filter:blur(0px);
+    
+    
+    border-radius: 10px;
+
+}
+
+.cab-img {
+    width:400px;
+    height:380px;
+    transition: 1s;
+    margin-left:-10px;
+    max-height:400px;
+}
+
+.cab-img:hover {
+    transform: scale(1.05);
+    height:370px;
+    cursor: url(../cursor-img.cur), auto;
+}
+.user-menu-panel {
+    font-family: LutskCity;
+    position:absolute;
+    max-width: 1360px;
+    margin-top:-80px;
+    margin-left:250px;
+    z-index:50;
+    
+    
+}
+.user-menu-panel-cab {
+    font-family: LutskCity;
+    position:absolute;
+    max-width: 1360px;
+    margin-top:850px;
+    margin-left:250px;
+    z-index:50;
+    
+    
+}
+.user-menu-panel-container {
+    position:fixed;
+}
+.user-menu-panel-content {
+    background-color: rgb(255, 255, 255, 0.2);
+    border-radius: 50px;
+    width:1300px;
+    margin-left:40px;
+    height:100px;
+    align-items: center;
+    filter:grayscale(50%);
+}
+.user-menu-panel-list, ul {
+    display:flex;
+    flex-flow: row;
+    margin-left:50px;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.user-menu-panel-list, li {
+
+    background-color: purple;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 100%;
+}
+
+
+.user-menu-panel-list, li:hover {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    background-position: 0 100%;
+
+}
+
+.left-text {
+    
+    
+    position:absolute;
+}
+
+
+.left-text-title {
+    transform: rotate(-90deg);
+    font-family: LutskCity;
+    font-size:100px;
+    margin-top:300px;
+    position:absolute;
+    margin-left:-200px;
+    color:rgb(81, 81, 230);
+}
+.left-text-subtitle {
+    transform: rotate(-90deg);
+    margin-left:-40px;
+    margin-top:300px;
+    font-family: LutskCity;
+    font-size:90px;
+    position:absolute;
+    color:rgb(81, 81, 230);
+}
+
+.nouser {
+    max-width: 1360px;
+    margin:auto;
+}
+
+.nouser-content {
+    
+    margin-top:300px;
+    align-items: center;
+}
+.Eror {
+    font-family: LutskCity;
+    font-size:50px;
+    color:royalblue;
+    text-align: center;
+}
+.Eror-subtitle {
+    font-family: LutskCity;
+    font-size:50px;
+    color:royalblue;
+    text-align: center;
+}
+
+#username {
+    background-color: rgb(255, 255, 255, 0.4);
+    width:400px;
+    height:80px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left:450px;
+    border:0px;
+    font-size:20px;
+    color:royalblue;
+}
+#username:focus {
+    background-color: rgb(255, 255, 255, 0.6);
+    transition: 1s;
+    width:400px;
+    height:80px;
+    text-align: center;
+    border-radius: 50px;
+    margin-left:450px;
+    border:0px;
+    font-size:20px;
+    color:royalblue;
+}
+
+.author {
+    width:600px;
+    height:500px;
+    margin-top:100px;
+    margin-left:750px;
+}
+
+.author-title {
+    font-size: 40px;
+    color:royalblue;
+    font-family: LutskCity;
+}
+
+.friend-list {
+    max-width: 1060px;
+    margin:auto;
+}
+
+.friend-list-content {
+    margin-top:20px;
+    width:1060px;
+    height:100px;
+    
+    display:flex;
+}
+
+.friend-list-friends-item {
+    padding-right: 15px;
+
+}
+
+.user-setting {
+    width:50px;
+    height:50px;
+    
+    position: absolute;
+    margin-top:-1107px;
+    margin-left:600px;
+}
+
+.settings {
+    max-width: 1360px;
+    margin:auto;
+}
+.settings-content {
+    background-color: rgb(255, 255, 255, 0.4);
+    width:1360px;
+    height:1000px;
+}
+
+.settings-logo {
+    width:700px;
+    height:400px;
+    position:absolute;
+    }   
+
+.settings-current-logo {
+    border-radius: 50px;
+    margin-left:150px;
+    position:absolute;
+}
+
+.set-img {
+    border-radius: 100px;
+    margin-top:50px;
+    margin-left:100px;
+}
+
+.settings-new-logo {
+    position:absolute;
+    margin-top:-140px;
+    margin-left:360px;
+}
+
+.set-title {
+    font-family: LutskCity;
+    font-size: 25px;
+    width:600px;
+
+}
+.set-file {
+    content: '';
+    color:#054C73;
+    border:0px;
+    margin-top:20px;
+}
+
+.settings-status {
+    width:700px;
+    height:200px;
+    position:absolute;
+    margin-top:430px;
+    margin-left:90px;
+}
+
+.settings-current-stat {
+    font-family: LutskCity;
+    font-size:25px;
+
+}
+
+.set-stat {
+    width:300px;
+    height:30px;
+    background-color: rgb(255, 255, 255, 0.3);
+    color:black;
+    border:0px;
+    border-radius: 40px;
+    margin-top:20px;
+    transition: 1s;
+}
+
+.set-stat:focus{
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: 1s;
+    font-size: 25px;
+}
+
+.set-bio {
+    width:700px;
+    height:60px;
+    background-color: rgb(255, 255, 255, 0.3);
+    color:black;
+    border:0px;
+    border-radius: 40px;
+    margin-top:20px;
+    transition: 1s;
+}
+
+.set-bio:focus{
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: 1s;
+    font-size: 15px;
+}
+.set-name{
+    width:300px;
+    height:30px;
+    background-color: rgb(255, 255, 255, 0.3);
+    color:black;
+    border:0px;
+    border-radius: 40px;
+    margin-top:20px;
+    transition: 1s;
+}
+
+.set-name:focus{
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: 1s;
+    font-size: 25px;
+}
+
+.settings-current-name {
+    font-family: LutskCity;
+    font-size:25px;
+}
+
+.settings-current-bio{
+    font-family: LutskCity;
+    font-size:25px;
+}
+.settings-name{
+position:absolute;
+margin-top:280px;
+margin-left:90px;
+}
+
+.settings-biography {
+    position:absolute;
+    margin-top:580px;
+    margin-left:90px;
+}
+
+.submit-img {
+    background-color: blue;
+    width:500px;
+}
+
+.phone-item {
+    width:420px;
+    height:700px;
+    background-color: black;
+    border-radius: 40px;
+    position:absolute;
+    margin-top:100px;
+    margin-left:300px;
+    transform: rotate(-12deg);
+    z-index: 3;
+   
+}
+.phone-item-container{
+    height:690px;
+    width:410px;
+    background-color: white;
+    border-radius: 40px;
+    margin-top:5px;
+    margin-left:5px;
+    background-image: url(../phone-item-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:grayscale(100%);
+    transition: 1s;
+    box-shadow: 1px 1px 15px wheat;
+}
+
+.phone-item-container:hover{
+    height:690px;
+    width:410px;
+    background-color: white;
+    border-radius: 40px;
+    margin-top:5px;
+    margin-left:5px;
+    background-image: url(../phone-item-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:grayscale(1%);
+}
+.phone-item-second{
+    width:420px;
+    height:705px;
+    background: linear-gradient(to right , blue 56%, white);
+    border-radius: 40px;
+    position:absolute;
+    margin-top:90px;
+    margin-left:400px;
+    transform: rotate(0deg);
+
+    z-index: 2;
+}
+.phone-item-top {
+    width:220px;
+    height:34px;
+    background-color: black;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    margin-left:90px;
+    margin-top:0px;
+    position:absolute;
+}
+
+.phone-item-camera {
+    width:25px;
+    height:25px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 2px 2px 2px white;
+    
+    margin-left:180px;
+    position:absolute;
+    margin-top:0px;
+    margin-left:95px;
+    z-index: 2;
+}
+.phone-item-loop{
+    width:17px;
+    height:17px;
+    position:absolute;
+    margin-top:-5px;
+    margin-left:-5px;
+    
+    box-shadow: 2px 2px 4px white;
+    border-radius: 50px;
+}
+.phone-item-button{
+    width:35px;
+    height:35px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: 2px 2px 2px white;
+    
+    margin-left:180px;
+    position:absolute;
+    margin-top:10px;
+    margin-left:180px;
+    z-index: 2;
+}
+
+.phone-item-button2{
+    width:15px;
+    height:15px;
+    border:1px solid rgb(255, 255, 255, 0.4);
+    border-radius: 5px;
+    margin-left:10px;    
+    background-color: black;
+    
+    
+    
+    position:absolute;
+    margin-top:10px;
+    
+    z-index: 2;
+}
+.phone-item-cameras {
+    width:15px;
+    height:15px;
+    border-radius: 50px;
+    box-shadow: 1px 1px 10px grey;
+    margin-left:180px;
+    position:absolute;
+    margin-top:10px;
+
+    margin-left:10px;
+    z-index:4;
+}
+
+.phone-item-logo {
+    margin-top:180px;
+    margin-left:80px;
+}
+
+.phone-item-form {
+    width:400px;
+    height:600px;
+    margin-top:50px;
+    margin-left:5px;
+    position:absolute;
+
+    border-radius: 50px;
+}
+.phone-item-log {
+
+
+}
+.phone-login-text {
+    width:200px;
+    margin-left:130px;
+    font-family: LutskCity;
+    padding-bottom: 30px;
+    padding-top:30px;
+    color:royalblue;
+}
+.phone-form {
+    background-color: rgb(255, 255, 255, 0.7);
+    height:20px;
+    border:0px solid none; 
+    width:200px;
+    margin-left:90px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    border-radius: 50px;
+    font-family: LutskCity;
+    font-size: 10px;
+}
+::placeholder{
+    color:royalblue;
+    text-align: center;
+    font-size: 15px;
+}
+
+::placeholder:focus {
+    color:white;
+}
+.phone-form:focus {
+
+    height:20px;
+    border:0px solid none; 
+    width:200px;
+    margin-left:90px;
+    padding-bottom: 10px;
+    padding-top:10px;
+    border-radius: 50px;
+    color:royalblue;
+    font-family: LutskCity;
+    font-size: 15px;
+}
+.phone-item-login {
+}
+.form-input {
+}
+.phone-registration-btn {
+}
+.phone-regbtn {
+    width:300px;
+    height:50px;
+    border:0px;
+    border-radius: 50px;
+    background-color: wheat;
+    margin-top:100px;
+    margin-left:50px;
+    filter: blur(1px);
+    transition: 1s;
+}
+.phone-regbtn:hover {
+    width:300px;
+    height:50px;
+    border:0px;
+    border-radius: 50px;
+    background-color: wheat;
+    filter: blur(0px);
+    margin-top:100px;
+    margin-left:50px;
+    transition: 1s;
+}
+.phone-item-bottom {
+    width:410px;
+    border-bottom-left-radius: 50px ;
+    border-bottom-right-radius: 50px;
+    margin-top:630px;
+    height:70px;
+    background-color: black;
+    position:absolute;
+    z-index:50;
+    
+}
